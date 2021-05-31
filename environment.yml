@@ -1,0 +1,19 @@
+name: toddler-chatbot
+channels:
+  - anaconda
+  - conda-forge
+  - pytorch
+dependencies:
+  - flask
+  - librosa
+  - pip
+  - pyaudio
+  # - pysoundfile
+  - python=3.8
+  - pytorch
+  - torchaudio
+  - tornado
+  - pip:
+    - sentencepiece
+    - transformers
+    - wikipedia

@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Test: record audio",
+            "type": "python",
+            "request": "launch",
+            "module": "unittests.audio_record_test"
+        },
+        {
+            "name": "Test: speech to text",
+            "type": "python",
+            "request": "launch",
+            "module": "unittests.speech_to_text_test",
+            "justMyCode": false
+        },
+        {
+            "name": "Test: wiki search",
+            "type": "python",
+            "request": "launch",
+            "module": "unittests.wikipedia_search_test",
+            "justMyCode": false
+        },
+        {
+            "name": "Test: question answer wiki",
+            "type": "python",
+            "request": "launch",
+            "module": "unittests.test_qa_wiki",
+            "justMyCode": false
+        },
+        {
+            "name": "Test: end-to-end",
+            "type": "python",
+            "request": "launch",
+            "module": "unittests.end_to_end_test",
+            "justMyCode": false
+        }
+    ]
+}

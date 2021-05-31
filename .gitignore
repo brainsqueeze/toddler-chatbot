@@ -3,8 +3,14 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+.vscode/*
+!.vscode/launch.json
+
 # C extensions
 *.so
+
+*.wav
+*.flac
 
 # Distribution / packaging
 .Python
