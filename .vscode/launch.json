@@ -37,6 +37,12 @@
             "request": "launch",
             "module": "unittests.end_to_end_test",
             "justMyCode": false
+        },
+        {
+            "name": "Test: busy workd",
+            "type": "python",
+            "request": "launch",
+            "module": "unittests.keep_your_kid_busy"
         }
     ]
 }
