@@ -1,9 +1,21 @@
+from subprocess import call
+from sys import platform
 import random
 import hashlib
 import wave
 import os
 
 import pyaudio
+
+
+def speak(message: str) -> None:
+    message = message.replace("'", "\'")
+    if platform == 'darwin':
+        call(["say", f"'{message}"])
+    elif platform == "linux":
+        call(["spd-say", f"'{message}"])
+    else:
+        print(message)
 
 
 class SpeechToWave:

@@ -1,13 +1,7 @@
-from subprocess import call
-from app.audio import SpeechToWave
+from app.audio import SpeechToWave, speak
 from app.nlp import Transcriber
 
 transcriber = Transcriber('facebook/wav2vec2-base-960h')
-
-
-def speak(message: str) -> None:
-    message = message.replace("'", "\'")
-    call(["say", f"'{message}"])
 
 
 def listen_for_answer(listen_time: int = 3) -> str:

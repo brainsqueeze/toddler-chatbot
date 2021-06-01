@@ -1,16 +1,10 @@
-from subprocess import call
 import wikipedia
 from app.nlp import build_qa_model
-from app.audio import SpeechToWave
+from app.audio import SpeechToWave, speak
 from app.nlp import Transcriber
 
 transcriber = Transcriber('facebook/wav2vec2-base-960h')
 qa_model = build_qa_model()
-
-
-def speak(message: str) -> None:
-    message = message.replace("'", "\'")
-    call(["say", f"'{message}"])
 
 
 def get_wiki_content(requested_topic: str) -> wikipedia.WikipediaPage:
